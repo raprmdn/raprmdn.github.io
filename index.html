@@ -1,297 +1,839 @@
-<!doctype html>
-<html lang="en" class="dark">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Rafi Putra Ramadhan Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!--  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script src="https://kit.fontawesome.com/77cb117779.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                fontFamily: {
-                    body: ['Inter', 'sans-serif']
-                }
-                },
-            },
-        }
-      </script>
-    <title>Rafi Putra Ramadhan Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body class="antialiased font-body text-slate-500 dark:text-slate-400 dark:bg-slate-900">
-<nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 ">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-               href="#">My Profile</a>
-            <button
-                class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-                type="button"
-                onclick="toggleNavbar('example-collapse-navbar')">
-                <i class="text-white fas fa-bars"></i>
-            </button>
-        </div>
-        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
-            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-                <li class="flex items-center">
-                    <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.facebook.com/rafiputra.ramadhan.1/" target="_blank">
-                        <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
-                        <span class="lg:hidden inline-block ml-2">Facebook</span>
-                    </a>
-                </li>
-                <li class="flex items-center">
-                    <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://twitter.com/raprmdn" target="_blank">
-                        <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
-                        <span class="lg:hidden inline-block ml-2">Twitter</span>
-                    </a>
-                </li>
-                <li class="flex items-center">
-                    <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.instagram.com/rvimys/" target="_blank">
-                        <i class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg "></i>
-                        <span class="lg:hidden inline-block ml-2">Instagram</span>
-                    </a>
-                </li>
-                <li class="flex items-center">
-                    <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://github.com/raprmdn" target="_blank">
-                        <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
-                        <span class="lg:hidden inline-block ml-2">GitHub</span>
-                    </a>
-                </li>
+
+<body>
+<header id="header">
+    <div class="container">
+
+        <h1><a href="index.html">Rafi Putra Ramadhan</a></h1>
+        <h2>I'm a passionate <span>Web Developer</span> from Indonesia.</h2>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link active" href="#header">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#resume">Resume</a></li>
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <div class="social-links">
+            <a href="https://github.com/raprmdn" target="_blank" class="github"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/rvimys" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/rafiputra.ramadhan.1/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/raprmdn" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+
+    </div>
+</header>
+
+<section id="about" class="about">
+
+    <div class="about-me container">
+
+        <div class="section-title">
+            <h2>About</h2>
+            <p>Learn more about me</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+                <img src="assets/img/me.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Web Developer</h3>
+                <p class="fst-italic">
+                    Currently studying at Bina Sarana Informatika
+                    University majoring Information Technology.
+                    Excellent ability to use Laravel as a Framework,
+                    and I've been developed over 10 application.
+                </p>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>11 Desember 2000</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>-</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 821 1366 4563</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pamulang, Tangerang Selatan, Banten</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor Degree</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rafiputraramadhan14@gmail.com</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mt-5">
+                    I'm an enthusiastic, self-motivated, reliable, responsible and hard-working person, with broad skills and experience as a Full-Stack Web Developer.
+                    Recently, I join the program <i>MSIB (Magang Studi Independen Bersertifikat) Kampus Merdeka</i> at NF Computer as a Full-Stack Web Developer,
+                    by joining this program hopefully I will be able to gain more experience, grow and further improve my skills.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="interests container">
+
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="https://laravel.com/img/logomark.min.svg"
+                         width="40" height="40" alt="Laravel" class="me-3">
+                    <h3>Laravel</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/Inertia_icon.png" alt="React" class="me-3"/>
+                    <h3>InertiaJS</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/react_icon.png" alt="React" class="me-3"/>
+                    <h3>ReactJS</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/api_icon.png" alt="API" class="me-3"/>
+                    <h3>Rest API</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/php_icon.png" alt="PHP" class="me-3"/>
+                    <h3>PHP</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/javascript_icon.png" alt="JS" class="me-3"/>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/apple-touch-icon.png" width="40" height="40" alt="BS" class="me-3"/>
+                    <h3>Bootstrap</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/css3_icon.png" alt="CSS" class="me-3"/>
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/html-5_icon.png" alt="HTML" class="me-3"/>
+                    <h3>HTML</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="interests container">
+
+        <div class="section-title">
+            <h2>Tools</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/PhpStorm_icon.png" width="40" height="40" alt="PHP Storm" class="me-3"/>
+                    <h3>PHPStorm (Primary)</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/vs_code.png" width="40" height="40" alt="HTML" class="me-3"/>
+                    <h3>Visual Studio Code</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/git_icon.svg" width="40" height="40" alt="HTML" class="me-3"/>
+                    <h3>Git</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/laragon_icon.png" alt="HTML" class="me-3"/>
+                    <h3>Laragon</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/tableplus_icon.png" width="40" height="40" alt="HTML" class="me-3"/>
+                    <h3>Table Plus</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/postman_icon.png" alt="HTML" class="me-3"/>
+                    <h3>Postman</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/mysql_icon.png" alt="HTML" class="me-3"/>
+                    <h3>MySQL</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/pgsql_icon.png" width="40" height="40" alt="HTML" class="me-3"/>
+                    <h3>PostgreSQL</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <img src="assets/img/win11_icon.jpg" width="40" height="40" alt="HTML" class="me-3"/>
+                    <h3>Windows 11</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Resume</h2>
+            <p>Check My Resume</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                    <h4>Link and Match Vocational High School</h4>
+                    <h5>2016 - 2019</h5>
+                    <p><em>Multimedia</em></p>
+                </div>
+                <div class="resume-item">
+                    <h4>Bina Sarana Informatika University</h4>
+                    <h5>2019 - now</h5>
+                    <p><em>Information Technology</em></p>
+                </div>
+
+                <h3 class="resume-title">Certificate</h3>
+                <div class="resume-item">
+                    <h4>CPA: Programming Essentials in C++</h4>
+                    <h5>2021</h5>
+                    <p><em>Cisco Network Academy</em></p>
+                </div>
+                <div class="resume-item">
+                    <h4>Belajar Membuat Aplikasi Android untuk Pemula</h4>
+                    <h5>2020</h5>
+                    <p><em>Dicoding</em></p>
+                </div>
+                <div class="resume-item">
+                    <h4>Belajar Prinsip Pemrograman SOLID</h4>
+                    <h5>2020</h5>
+                    <p><em>Dicoding</em></p>
+                </div>
+                <div class="resume-item">
+                    <h4>Kursus dasar-dasar PHP</h4>
+                    <h5>2020</h5>
+                    <p><em>Progate</em></p>
+                </div>
+                <div class="resume-item">
+                    <h4>Kursus fundamental Git</h4>
+                    <h5>2020</h5>
+                    <p><em>Progate</em></p>
+                </div>
+                <div class="resume-item">
+                    <h4>Kursus fundamental JavaScript</h4>
+                    <h5>2020</h5>
+                    <p><em>Progate</em></p>
+                </div>
+                <div class="resume-item">
+                    <h4>Kursus fundamental React frontend</h4>
+                    <h5>2020</h5>
+                    <p><em>Progate</em></p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="resume-title">Experience</h3>
+                <div class="resume-item">
+                    <h4><em>Internship</em> - Content Creator</h4>
+                    <h5>2018</h5>
+                    <p><em>Pustekkom Kemdikbud, Ciputat</em></p>
+                    <p>
+                    <ul>
+                        <li>Poster Designer.</li>
+                        <li>Video Editor.</li>
+                        <li>Script Writer.</li>
+                        <li>Video Creator, for educational purposes at Ensiklomedia Platform.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <h3 class="resume-title">Projects</h3>
+                <div class="resume-item">
+                    <h4>
+                        <a href="https://github.com/raprmdn/dream-space-screencasts" target="_blank">
+                            Dream Space Screencasts
+                        </a>
+                    </h4>
+                    <h5>2021</h5>
+                    <p><em>Individual Project</em></p>
+                    <p>
+                    <ul>
+                        <li>Screencasts Digital Learning Platform.</li>
+                        <li>Web based application with Laravel, InertiaJS, and ReactJS.</li>
+                        <li>Users can purchase and watch the series on the website.</li>
+                        <li>Integrated with Midtrans Payment Gateway.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="resume-item">
+                    <h4>SMP PGRI 2 Bogor</h4>
+                    <h5>2021</h5>
+                    <p><em>Team Project</em></p>
+                    <p>
+                    <ul>
+                        <li>School Management System.</li>
+                        <li>Web based application with Laravel, and ReactJS.</li>
+                        <li>Report, students and teacher management, blog, payment and others.</li>
+                        <li>Integrated with Midtrans Payment Gateway.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="resume-item">
+                    <h4>
+                        <a href="https://github.com/raprmdn/digital-knowledge" target="_blank">
+                            Digital Knowledge Blog
+                        </a>
+                    </h4>
+                    <h5>2021</h5>
+                    <p><em>Individual Project</em></p>
+                    <p>
+                    <ul>
+                        <li>Article Content Management System.</li>
+                        <li>Web based application with Laravel.</li>
+                        <li>Users can manage the article, roles and permissions, menu and others.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="resume-item">
+                    <h4>
+                        <a href="https://github.com/raprmdn/flora-luna-website" target="_blank">
+                            Flora Luna Website
+                        </a>
+                    </h4>
+                    <h5>2021</h5>
+                    <p><em>Individual Project</em></p>
+                    <p>
+                    <ul>
+                        <li>Purchasing an item game.</li>
+                        <li>Web based application with Laravel.</li>
+                        <li>Users can purchase item.</li>
+                        <li>Integrated with Midtrans Payment Gateway.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>My Works</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-project">Project</li>
+                    <li data-filter=".filter-certificate">Certificate</li>
+                    <li data-filter=".filter-embed">Embed</li>
+                    <li data-filter=".filter-me">Me</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/ds-1.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Dream Space Screencasts</h4>
+                        <p>Series</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/ds-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="dream-space-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/ds-3.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Dream Space Screencasts</h4>
+                        <p>Watch Series</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/ds-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="dream-space-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/ds-5.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Dream Space Screencasts</h4>
+                        <p>Topics</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/ds-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="dream-space-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/ds-7.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Dream Space Screencasts</h4>
+                        <p>Watchlist</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/ds-7.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="dream-space-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/dig-know-1.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Digital Knowledge</h4>
+                        <p>Home</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/dig-know-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="digital-knowledge-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/dig-know-2.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Digital Knowledge</h4>
+                        <p>Home</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/dig-know-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="digital-knowledge-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/dig-know-6.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Digital Knowledge</h4>
+                        <p>Create Article</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/dig-know-6.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="digital-knowledge-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/dig-know-14.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Digital Knowledge</h4>
+                        <p>Menu Management</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/dig-know-14.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="digital-knowledge-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/fl-1.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Flora Luna</h4>
+                        <p>Home</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/fl-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                            <a href="flora-luna-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/certificate/sertif-1.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Certificate</h4>
+                        <p>Kursus dasar-dasar PHP</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/certificate/sertif-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/certificate/sertif-2.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Certificate</h4>
+                        <p>Kursus fundamental Git</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/certificate/sertif-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/certificate/sertif-3.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Certificate</h4>
+                        <p>Kursus fundamental JavaScript</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/certificate/sertif-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/certificate/sertif-4.png" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Certificate</h4>
+                        <p>Kursus fundamental React frontend</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/certificate/sertif-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/certificate/sertif-5.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Certificate</h4>
+                        <p>Belajar Membuat Aplikasi Android untuk Pemula</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/certificate/sertif-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/certificate/sertif-6.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Certificate</h4>
+                        <p>Belajar Prinsip Pemrograman SOLID</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/certificate/sertif-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-certificate">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/certificate/sertif-7.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Certificate</h4>
+                        <p>CPA: Programming Essentials in C++</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/certificate/sertif-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-embed">
+                <div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/cM963tI7Q_k" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-embed">
+                <div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/sAuEeM_6zpk" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-embed">
+                <div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/kzdJkT4kp-A" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-embed">
+                <div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/_XyBa8QsVQU" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-embed">
+                <div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/qWJTH8b-KyU" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-embed">
+                <div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Y4nEEZwckuU" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-me">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/bg_me.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                            <h4>Gallery</h4>
+                        <p>Me</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/bg_me.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-me">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/gallery_me1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Gallery</h4>
+                        <p>Me</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/gallery_me1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-me">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/me.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Gallery</h4>
+                        <p>Me</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/me.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Me</p>
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="bx bx-map"></i>
+                    <h3>My Address</h3>
+                    <p>Vila Inti Persada, Pamulang, Tangerang Selatan</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="bx bx-share-alt"></i>
+                    <h3>Social Profiles</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/raprmdn" target="_blank" class="github"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/rvimys" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/rafiputra.ramadhan.1/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/raprmdn" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email Me</h3>
+                    <p>rafiputraramadhan15@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="bx bx-phone-call"></i>
+                    <h3>Call Me</h3>
+                    <p>+62 821 1366 4563</p>
+                </div>
+            </div>
+        </div>
+
+        <form role="form" class="php-email-form mt-4">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+        <div class="row">
+            <div class="container mt-5">
+                <table class="table table-light table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Standard</th>
+                        <th scope="col">Multiple</th>
+                        <th scope="col">Extended</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Installations</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</nav>
-<main class="profile-page">
-    <section class="relative block" style="height: 500px;">
-        <div class="absolute top-0 w-full h-full bg-center bg-cover"
-             style='background-image: url("https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80");'>
-          <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
-        </div>
-    </section>
-    <section class="relative pt-16 pb-6">
-        <div class="container mx-auto px-4">
-            <div class="relative flex flex-col min-w-0 break-words dark:bg-slate-800 w-full mb-6 shadow-xl rounded-lg -mt-64">
-                <div class="px-6">
-                    <div class="flex flex-wrap justify-center">
-                        <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
-                            <div class="relative">
-                                <img alt="Rafi Putra Ramadhan" src="./image/me_150_150.jpg" class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16" style="max-width: 150px;"/>
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-                            <div class="py-6 px-3 mt-32 sm:mt-0">
-                                <button class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400 uppercase font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none sm:mr-2 mb-1" type="button" style="transition: all 0.15s ease 0s;">
-                                    Follow
-                                </button>
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4 lg:order-1">
-                            <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                                <div class="mr-4 p-3 text-center">
-                                    <button class="dark:bg-slate-700 text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-2" type="button">
-                                        <i class="fa-brands fa-laravel text-red-500"></i>
-                                    </button>
-                                </div>
-                                <div class="mr-4 p-3 text-center">
-                                    <button class="dark:bg-slate-700 text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-2" type="button">
-                                        <i class="fa-brands fa-react text-blue-400"></i>
-                                    </button>
-                                </div>
-                                <div class="lg:mr-4 p-3 text-center">
-                                    <button class="dark:bg-slate-700 text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-2" type="button">
-                                        <i class="fa-brands fa-php"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-12">
-                        <h2 class="text-5xl font-extrabold leading-normal mb-2 mb-2 text-white">
-                            Rafi Putra Ramadhan
-                        </h2>
-                        <div class="text-sm leading-normal mt-0 mb-2 font-bold uppercase">
-                            <i class="fas fa-map-marker-alt mr-2 text-lg"></i>
-                            Tangerang Selatan, Indonesia
-                        </div>
-                        <div class="mb-2 mt-10">
-                            <i class="fas fa-briefcase mr-2 text-lg"></i>
-                            Mahasiswa - Web Developer
-                        </div>
-                        <div class="mb-2">
-                            <i class="fas fa-university mr-2 text-lg"></i>
-                            University of Bina Sarana Informatika
-                        </div>
-                    </div>
-                    <div class="mt-10 py-10 border-t border-gray-300 text-center">
-                        <div class="flex flex-wrap justify-center">
-                            <div class="w-full lg:w-10/12 px-4">
-                                <p class="mb-4 leading-relaxed mx-auto text-justify">
-                                    Perkenalkan nama saya Rafi Putra Ramadhan biasa dipanggil Rafi, berusia 21 tahun. Saya lahir di Jakarta pada tanggal 11 Desember 2000. Saat ini saya tinggal di Komplek Vila Inti Persada, kec. Pamulang, kel. Pamulang Timur, Kota Tangerang Selatan. Pendidikan yang sedang saya tempuh saat ini yaitu, kuliah. Saya kuliah di Universitas Bina Sarana Informatika, program studi Teknologi Informasi dan saat ini sedang berada di Semester 6.
-                                </p>
-                                <p class="mb-4 leading-relaxed mx-auto text-justify">
-                                    Saya adalah orang yang sangat tertarik dengan dunia Teknologi, sebelumn terjun ke dunia Programming, pada saat SMK saya mengambil jurusan Multimedia, saya suka membuat hal kreatif seperti membuat design photo, design poster/banner, membuat shortmovie, dan lain-lain. dan pada kelas 2 SMK saya diterima Praktik Kerja Lapangan (PKL) di salah satu instansi pemerintah yaitu Pustekkom Kemdikbud Ciputat sekarang berubah menjadi Pusdatin Kemdikbud.
-                                    Di Pustekkom saya masuk bagian RTF sebagai Content Creator untuk platform yang diberi nama Ensiklomedia. Ensiklomedia merupakan platform edukasi digital yang berisi banyak video edukasi seperti tutorial dan lain-lain. Saya diwajibkan merilis setidaknya 1 video dalam 1 minggu, dan di sana saya belajar bagaimana cara membuat content seperti penulisan script, voice over, dan lain-lain.
-                                </p>
-                                <p class="mb-4 leading-relaxed mx-auto text-justify">
-                                    Saya mulai tertarik pada dunia programming pada saat PKL tersebut, karena pada saat itu saya pernah mendapat tawaran itu mendesign, tetapi tidak menggunakan photoshop, illustrator atau pun yg lain, tetapi menggunakan CSS untuk layouting beberapa design website. Karena saya baru mendengarnya jadi saya blm bisa menerima tawaran tersebut, tetapi karena ada rasanya penasaran saya mencari tahu lebih lanjut apa itu dan kegunaannya untuk apa dan sebagainya, saya pun menemukan hal menarik
-                                    yaitu tentang Web Development. Saya pun banyak mengulik tentang Web Development tersebut dan mengikut Ekstrakurikuler membuat Web serta mengikuti kursus untuk Web Development.
-                                    Bahasa pertama yang pelajari yaitu C++ pada awal semester 1 di kampus, dan lanjut ke Java, pada pemrograman Java saya mencoba ke ranah GUI, dan Website. Framework Java yang saya gunakan untuk membangun website yaitu Spring Boot, dan project pertama yang saya buat yaitu Sistem RT yang dipegang oleh teman saya walaupun saya lebih banyak untuk mengubah template yang sudah.
-                                    Namun, karena tidak adanya perkembangan dalam diri saya saat mempelajari Spring Boot, saya mencoba Framework lain untuk membangun website yaitu Laravel. Saya memilih Laravel karena resource pembelajaran yang mudah didapatkan dan studi kasus lebih mudah dipahami dan karena hal tersebut yang membuat saya makin nyaman dalam mempelajari dan memperdalami skill saya dibidang Fullstack Web Development.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="relative pb-10">
-        <div class="container mx-auto px-4">
-            <div class="relative flex flex-col min-w-0 break-words dark:bg-slate-800 w-full mb-6 shadow-xl rounded-lg">
-                <div class="flex flex-wrap -m-1 md:-m-2 p-12">
-                    <div class="flex flex-wrap w-1/2">
-                        <div class="w-1/2 p-1 md:p-2">
-                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                 src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp">
-                        </div>
-                        <div class="w-1/2 p-1 md:p-2">
-                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                 src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp">
-                        </div>
-                        <div class="w-full p-1 md:p-2">
-                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                 src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap w-1/2">
-                        <div class="w-full p-1 md:p-2">
-                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                 src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp">
-                        </div>
-                        <div class="w-1/2 p-1 md:p-2">
-                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                 src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp">
-                        </div>
-                        <div class="w-1/2 p-1 md:p-2">
-                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                 src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="relative pb-10">
-        <div class="container mx-auto px-4">
-            <div class="relative flex flex-col min-w-0 break-words dark:bg-slate-800 w-full mb-6 shadow-xl rounded-lg">
-                <div class="p-12">
-                    <div class="mt-10 sm:mt-0">
-                        <div class="md:grid md:grid-cols-3 md:gap-6">
-                            <div class="md:col-span-1">
-                                <div class="px-4 sm:px-0">
-                                    <h3 class="text-3xl font-extrabold text-white leading-6">Contact Form</h3>
-                                    <p class="mt-3 text-sm">Send us your inquiries. We'll never share your email with anyone else.</p>
-                                </div>
-                            </div>
-                            <div class="mt-5 md:mt-0 md:col-span-2">
-                                <form action="#" method="POST">
-                                    <div class="shadow overflow-hidden sm:rounded-md">
-                                        <div class="px-4 py-5 bg-white sm:p-6">
-                                            <div class="grid grid-cols-6 gap-6">
-                                                <div class="col-span-6 sm:col-span-3">
-                                                    <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Enter your first name">
-                                                </div>
+</section>
 
-                                                <div class="col-span-6 sm:col-span-3">
-                                                    <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Enter your last name">
-                                                </div>
+<div class="credits">
+    Made with <i class="bi bi-heart-fill text-danger"></i> Rafi Putra Ramadhan 2022
+</div>
 
-                                                <div class="col-span-6 sm:col-span-6">
-                                                    <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
-                                                    <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Enter your email address">
-                                                </div>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
 
-                                                <div class="col-span-6 sm:col-span-6">
-                                                    <label for="about" class="block text-sm font-medium text-gray-700"> Your Message</label>
-                                                    <div class="mt-1">
-                                                        <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder="Enter your message"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                                            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer class="relative pt-8 pb-6">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4">
-                <h4 class="text-3xl font-extrabold text-slate-50">Let's keep in touch!</h4>
-                <h5 class="text-lg mt-0 mb-2">
-                    Find me from any social media below.
-                </h5>
-                <div class="mt-6">
-                    <button onclick="facebook()" class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-                        <i class="flex fab fa-facebook-square"></i>
-                    </button>
-                    <button onclick="twitter()" class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-                        <i class="flex fab fa-twitter"></i>
-                    </button>
-                    <button onclick="instagram()" class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-                        <i class="flex fab fa-instagram"></i>
-                    </button>
-                    <button onclick="github()" class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-                        <i class="flex fab fa-github"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <hr class="my-6 border-gray-400" />
-        <div class="flex flex-wrap items-center md:justify-between justify-center">
-            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-                <div class="text-sm py-1">
-                    Copyright © 2022
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
 </body>
-<script>
-    function facebook() {
-        window.open('https://www.facebook.com/rafiputra.ramadhan.1/')
-    }
-    function twitter() {
-        window.open('https://twitter.com/raprmdn')
-    }
-    function instagram() {
-        window.open('https://www.instagram.com/rvimys/')
-    }
-    function github() {
-        window.open('https://github.com/raprmdn')
-    }
-    function toggleNavbar(collapseID) {
-        document.getElementById(collapseID).classList.toggle("hidden");
-        document.getElementById(collapseID).classList.toggle("block");
-    }
-</script>
+
 </html>
